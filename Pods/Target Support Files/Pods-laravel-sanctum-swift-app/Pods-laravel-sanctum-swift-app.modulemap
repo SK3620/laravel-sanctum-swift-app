@@ -1,0 +1,6 @@
+framework module Pods_laravel_sanctum_swift_app {
+  umbrella header "Pods-laravel-sanctum-swift-app-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156C4A5E2AB0C74AB826FFAE /* Pods_laravel_sanctum_swift_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B071985313563F51B968BACB /* Pods_laravel_sanctum_swift_app.framework */; };
 		83EE94112C606FBC0099AF25 /* laravel_sanctum_swift_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE94102C606FBC0099AF25 /* laravel_sanctum_swift_appApp.swift */; };
 		83EE94132C606FBC0099AF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE94122C606FBC0099AF25 /* ContentView.swift */; };
 		83EE94152C606FBF0099AF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE94142C606FBF0099AF25 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45AB2E124FEC2D8C32CF1F70 /* Pods-laravel-sanctum-swift-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-laravel-sanctum-swift-app.release.xcconfig"; path = "Target Support Files/Pods-laravel-sanctum-swift-app/Pods-laravel-sanctum-swift-app.release.xcconfig"; sourceTree = "<group>"; };
+		8083820863755B1BBDEACE8F /* Pods-laravel-sanctum-swift-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-laravel-sanctum-swift-app.debug.xcconfig"; path = "Target Support Files/Pods-laravel-sanctum-swift-app/Pods-laravel-sanctum-swift-app.debug.xcconfig"; sourceTree = "<group>"; };
 		83EE940D2C606FBC0099AF25 /* laravel-sanctum-swift-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laravel-sanctum-swift-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE94102C606FBC0099AF25 /* laravel_sanctum_swift_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = laravel_sanctum_swift_appApp.swift; sourceTree = "<group>"; };
 		83EE94122C606FBC0099AF25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83EE94142C606FBF0099AF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE94172C606FBF0099AF25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B071985313563F51B968BACB /* Pods_laravel_sanctum_swift_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_laravel_sanctum_swift_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156C4A5E2AB0C74AB826FFAE /* Pods_laravel_sanctum_swift_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B3EA7311872DA1910D5E21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8083820863755B1BBDEACE8F /* Pods-laravel-sanctum-swift-app.debug.xcconfig */,
+				45AB2E124FEC2D8C32CF1F70 /* Pods-laravel-sanctum-swift-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		83EE94042C606FBC0099AF25 = {
 			isa = PBXGroup;
 			children = (
 				83EE940F2C606FBC0099AF25 /* laravel-sanctum-swift-app */,
 				83EE940E2C606FBC0099AF25 /* Products */,
+				42B3EA7311872DA1910D5E21 /* Pods */,
+				B2E8D680D7A798050A97FBC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B2E8D680D7A798050A97FBC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B071985313563F51B968BACB /* Pods_laravel_sanctum_swift_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83EE941B2C606FBF0099AF25 /* Build configuration list for PBXNativeTarget "laravel-sanctum-swift-app" */;
 			buildPhases = (
+				94F9CF720AAFDD7E58F1BF39 /* [CP] Check Pods Manifest.lock */,
 				83EE94092C606FBC0099AF25 /* Sources */,
 				83EE940A2C606FBC0099AF25 /* Frameworks */,
 				83EE940B2C606FBC0099AF25 /* Resources */,
+				232B8B801EB48B5C797D8CB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		232B8B801EB48B5C797D8CB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-laravel-sanctum-swift-app/Pods-laravel-sanctum-swift-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-laravel-sanctum-swift-app/Pods-laravel-sanctum-swift-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-laravel-sanctum-swift-app/Pods-laravel-sanctum-swift-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94F9CF720AAFDD7E58F1BF39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-laravel-sanctum-swift-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83EE94092C606FBC0099AF25 /* Sources */ = {
@@ -266,6 +335,7 @@
 		};
 		83EE941C2C606FBF0099AF25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8083820863755B1BBDEACE8F /* Pods-laravel-sanctum-swift-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 		};
 		83EE941D2C606FBF0099AF25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AB2E124FEC2D8C32CF1F70 /* Pods-laravel-sanctum-swift-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
