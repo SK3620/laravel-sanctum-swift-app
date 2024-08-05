@@ -66,7 +66,7 @@ class AuthViewModel: ObservableObject {
     }
 
     func login() {
-        guard let url = URL(string: "") else { return }
+        guard let url = URL(string: "http://localhost:8000/api/login") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
