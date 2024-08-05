@@ -92,8 +92,10 @@ class AuthViewModel: ObservableObject {
                 switch completion {
                 case .failure(let error):
                     self.errorMessage = "Login failed: \(error.localizedDescription)"
+                    self.isAuthenticated = false
                 case .finished:
                     self.errorMessage = nil
+                    self.isAuthenticated = true
                 }
             }, receiveValue: { tokenResponse in
                 self.token = tokenResponse.token
